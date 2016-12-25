@@ -6,8 +6,6 @@ curl -s https://bootstrap.pypa.io/get-pip.py | python3.4 > /dev/null 2>&1
 
 echo 'Installing and configuring virtualenv and virtualenvwrapper...'
 pip install Pygments==2.1.1 django
-mkdir ~vagrant/virtualenvs
-chown vagrant:vagrant ~vagrant/virtualenvs
 printf "export PYTHONPATH=/usr/lib/python3.4" >> ~vagrant/.bashrc
 printf "export WORKON_HOME=~vagrant/\n" >> ~vagrant/.bashrc
 printf "export PROJECT_HOME=/vagrant\n" >> ~vagrant/.bashrc
@@ -16,4 +14,4 @@ printf "export PROJECT_HOME=/vagrant\n" >> ~vagrant/.bashrc
 echo ""
 echo "Vagrant install complete."
 echo "Now try logging in:"
-echo "    $ vagrant ssh"
+echo "    vagrant ssh"
